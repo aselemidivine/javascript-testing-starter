@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle class</title>
+    <style>
+      .hidden {
+        display: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="image.jp" alt="placeholder" id="image" />
+    <button onclick="changeAttributes()">Change Attributes</button>
+    <script>
+
+
+      function changeAttributes() {
+        var img = document.getElementById('image');
+        img.src = 'newimage.jpg';
+        img.alt = 'New image'
+
+      }
+  
+      // function countElements() {
+      //   let count = document.getElementsByClassName('item').length;
+      //   alert('Number of elements:' + count);
+      // }
+
+      // function removeElement() {
+      //   let elementToRemove = document.querySelector('#container p');
+      //   elementToRemove.parentNode.removeChild(elementToRemove);
+      // }
+
+      // function createNewElement() {
+      //   let newElement = document.createElement('p');
+      //   newElement.textContent = "New Element";
+      //   document.getElementById('container').appendChild(newElement);
+      // }
+
+      // function changeColor() {
+      //   document.querySelector(".changeable").style.color = "red";
+      // }
+
+      // changeColor();
+
+      //   function toggleHighlight(element) {
+      //     element.classList.toggle("highlighted");
+      //   }
+
+      //   toggleHighlight();
+    </script>
+  </body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toggle class</title>
+    <style>
+      .highlighted {
+        background-color: yellow;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div onclick="toggleHighlight(this)">Click me to highlight</div>
+    <script>
+      function toggleHighlight(element) {
+        element.classList.toggle("highlighted");
+      }
+
+      toggleHighlight();
+    </script>
+  </body>
+</html> -->
